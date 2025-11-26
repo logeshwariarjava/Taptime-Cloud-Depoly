@@ -71,6 +71,7 @@ const Device = () => {
     branchName: "",
     timeZone: "America/New_York"
   });
+  
 
   useEffect(() => {
     const limitStr = localStorage.getItem("device_count") || "";
