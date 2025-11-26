@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: "taptime-cloud",
   e2e: {
     baseUrl: "https://logeshwariarjava.github.io/Taptime-Cloud-Depoly/",
     supportFile: "cypress/support/e2e.js",
