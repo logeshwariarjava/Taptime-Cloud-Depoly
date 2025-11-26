@@ -1,17 +1,13 @@
-import { defineConfig } from "cypress";
+const { defineConfig } = require("cypress");
 
-export default defineConfig({
-  
-  projectId: "i6p5n9",
+module.exports = defineConfig({
   e2e: {
-    baseUrl: 'http://localhost:5173',
-    viewportWidth: 1280,
-    viewportHeight: 720,
-    defaultCommandTimeout: 10000,
-    requestTimeout: 10000,
-    responseTimeout: 10000,
+    baseUrl: "https://dev.taptime-react.pages.dev",
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      return config;
     },
+  },
+  env: {
+    record: true,        // cloud record enable
   },
 });
